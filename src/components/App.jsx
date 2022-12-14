@@ -1,6 +1,4 @@
-import {
-  Outlet, Route, Routes,
-} from 'react-router-dom';
+import { Outlet, Route, Routes } from 'react-router-dom';
 import Container from './Container';
 import About from '../pages/About';
 import Footer from './Footer';
