@@ -8,7 +8,7 @@ export default function Error404() {
       <p className="description">
         Oups ! La page que vous demandez n&apos;existe pas.
       </p>
-      <Link to="/">Retourner sur la page d’accueil</Link>
+      <Link to="/">Retourner sur la page d&apos;accueil</Link>
     </div>
   );
 }
