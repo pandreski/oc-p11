@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import About from '../pages/About';
-import Error404 from '../pages/Error404';
-import Home from '../pages/Home';
-import Layout from './Layout';
+import About from './pages/About';
+import Error404 from './pages/Error404';
+import Home from './pages/Home';
+import Layout from './components/Layout';
 
 export default function Router() {
   return (

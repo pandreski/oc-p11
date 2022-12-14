@@ -1,0 +1,61 @@
+.media-thin-banner {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: percentage(223/335);
+    background-color: rgba(#000, .3);
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: percentage(223/1240);
+    }
+  }
+
+  &.tiny {
+    &::before {
+      padding-bottom: percentage(111/335);
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: percentage(223/1240);
+      }
+    }
+  }
+
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 75%;
+    padding-left: 1em;
+    color: #fff;
+    font-size: 1.5em;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3em;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 .5em;
+      text-align: center;
+    }
+  }
+}
