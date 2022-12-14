@@ -4,6 +4,7 @@ import About from '../pages/About';
 import Footer from './Footer';
 import Header from './Header';
 import Home from '../pages/Home';
+import Error404 from '../pages/Error404';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="a-propos" element={<About />} />
+        <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
   );
