@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('./__mocks__/logements.json')
+    fetch('/__mocks__/logements.json')
       .then((res) => res.json())
       .then((res) => {
         setAccomodations(res);
