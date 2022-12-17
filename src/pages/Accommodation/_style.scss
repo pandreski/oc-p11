@@ -19,6 +19,10 @@
 
     .primary-info {
       color: variables.$color-primary;
+
+      @media screen and (min-width: 992px) {
+        padding-right: 3em;
+      }
     }
 
     .secondary-info {

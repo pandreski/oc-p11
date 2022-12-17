@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import HostProfile from '../../components/HostProfile';
 import Loader from '../../components/Loader';
 import Rating from '../../components/Rating';
@@ -10,6 +10,7 @@ import './_style.scss';
 
 export default function Accommodation() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [data, setData] = useState({});
   const [pictures, setPictures] = useState([]);
   const [tags, setTags] = useState([]);
@@ -25,6 +26,12 @@ export default function Accommodation() {
       .then((res) => res.json())
       .then((jsonData) => {
         const objData = jsonData.find((elem) => elem.id === id);
+
+        // Display 404 page if the accommodation id is not found
+        if (typeof objData === 'undefined') {
+          navigate('/not-found');
+        }
+
         setData(objData);
         setPictures(objData.pictures);
         setTags(objData.tags);
