@@ -30,5 +30,5 @@ export default function Collapse({ title, body }) {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.node.isRequired,
 };

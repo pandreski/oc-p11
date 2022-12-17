@@ -1,0 +1,12 @@
+.rating {
+  .star {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

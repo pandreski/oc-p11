@@ -39,6 +39,7 @@ header {
   font-size: .75em;
   color: variables.$color-primary;
   text-decoration: none;
+  text-transform: uppercase;
 
   &.active {
     text-decoration: underline;
@@ -46,5 +47,6 @@ header {
 
   @media screen and (min-width: 768px) {
     font-size: 1.5em;
+    text-transform: none;
   }
 }

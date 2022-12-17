@@ -1,0 +1,18 @@
+@use '../../styles/variables';
+
+.tag {
+  color: #fff;
+  display: inline-block;
+  padding: .3em 1em;
+  min-width: 84px;
+  font-size: .625em;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: variables.$color-primary;
+
+  @media screen and (min-width: 768px) {
+    font-size: .875em;
+    min-width: 115px;
+  }
+}

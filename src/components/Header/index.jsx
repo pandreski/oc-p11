@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <ul>
           <li><NavLink className="headerNavLink" to="/">Accueil</NavLink></li>
-          <li><NavLink className="headerNavLink" to="/a-propos">A propos</NavLink></li>
+          <li><NavLink className="headerNavLink" to="/a-propos">A Propos</NavLink></li>
         </ul>
       </nav>
     </header>
