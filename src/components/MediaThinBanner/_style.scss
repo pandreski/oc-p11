@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .media-thin-banner {
   position: relative;
   border-radius: 10px;
@@ -6,20 +8,20 @@
   &::before {
     content: '';
     display: block;
-    padding-bottom: percentage(223/335);
+    padding-bottom: math.percentage(math.div(223,335));
     background-color: rgba(#000, .3);
 
     @media screen and (min-width: 768px) {
-      padding-bottom: percentage(223/1240);
+      padding-bottom: math.percentage(math.div(223,1240));
     }
   }
 
   &.tiny {
     &::before {
-      padding-bottom: percentage(111/335);
+      padding-bottom: math.percentage(math.div(111,335));
 
       @media screen and (min-width: 768px) {
-        padding-bottom: percentage(223/1240);
+        padding-bottom: math.percentage(math.div(223,1240));
       }
     }
   }
