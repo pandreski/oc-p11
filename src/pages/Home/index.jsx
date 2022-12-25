@@ -6,7 +6,7 @@ import Loader from '../../components/Loader';
 import './_style.scss';
 
 export default function Home() {
-  const [accomodations, setAccomodations] = useState([]);
+  const [accommodations, setAccommodations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Home() {
     fetch('/__mocks__/logements.json')
       .then((res) => res.json())
       .then((res) => {
-        setAccomodations(res);
+        setAccommodations(res);
         setIsLoading(false);
       })
       .catch((e) => console.error(e));
@@ -33,7 +33,7 @@ export default function Home() {
         ) : (
           <div className="cards-wrapper">
             {
-              accomodations.map(({ cover, title, id }) => (
+              accommodations.map(({ cover, title, id }) => (
                 <Card
                   key={id}
                   imageUrl={cover}
