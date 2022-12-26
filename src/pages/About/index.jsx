@@ -1,3 +1,4 @@
+import React from 'react';
 import Collapse from '../../components/Collapse';
 import MediaThinBanner from '../../components/MediaThinBanner';
 import image from '../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg';

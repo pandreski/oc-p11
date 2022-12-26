@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo from '../../assets/images/logo-white.svg';
 import './_style.scss';
 

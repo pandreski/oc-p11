@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import BannerImage from '../../assets/images/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
 import Card from '../../components/Card';
 import MediaThinBanner from '../../components/MediaThinBanner';

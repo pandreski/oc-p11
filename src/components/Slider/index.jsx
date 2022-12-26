@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './_style.scss';
 
